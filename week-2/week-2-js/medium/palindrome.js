@@ -7,4 +7,5 @@ function isPalindrome(str) {
   return true;
 }
 
+const str = "kaifyyy"
 module.exports = isPalindrome;
