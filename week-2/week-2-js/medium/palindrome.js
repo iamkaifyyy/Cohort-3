@@ -4,8 +4,42 @@
 */
 
 function isPalindrome(str) {
+  
+  let filteredStr = '';
+  for(let char of str){
+    if(())
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  // for(let a = 0; a< str.length; a++){
+    
+  // }
+  
+  
+  
   return true;
 }
 
-const str = "kaifyyy"
+const str = "kaifyyy";
+console.log(str)
 module.exports = isPalindrome;

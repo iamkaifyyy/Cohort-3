@@ -9,14 +9,16 @@ function countVowels(str){
   const vowels = "aeiouAEIOU";
   let count = 0;
 
-  for (let i = 0; i < str.length; i++) {
-    if(vowels.includes(str[i])){
-      console.log(`vowel found: ${str[i]}`);
+  for (let char of str ){
+    if(vowels.includes(char)){
       count++;
     }
+  }
+
+  return count++;
 }
 
-}
+
 
 const str = "kaifyyy";
 console.log(`total vowels: ${countVowels(str)}`);
