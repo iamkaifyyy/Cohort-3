@@ -11,7 +11,17 @@
 */
 
 class Todo {
+  constructor(){{
+    this.todos = [];
+  }
 
+  add(todo){
+    this.todos.push(todo);
+  }
+
+  remove(indexOfTodo){
+    if (indexOfTodo >= 0 && indexOfTodo)
+  }
 }
-
+  update 
 module.exports = Todo;
