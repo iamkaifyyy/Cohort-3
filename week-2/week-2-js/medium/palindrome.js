@@ -5,11 +5,8 @@
 
 function isPalindrome(str) {
   
-  let filteredStr = '';
-  for(let char of str){
-    if(())
-  }
-  
+  let filteredStr = ' ';
+  for
   
   
   
