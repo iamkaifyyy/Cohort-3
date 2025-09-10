@@ -25,5 +25,42 @@ class Calculator {
     this.result = this.result + number;
   }
 
+  subtract(number){
+    this.result -= number;
+  }
+
+  multiply(number){
+    this.result *= number;
+  }
+
+  divide(number){
+    if(number === 0){
+      throw new Error("Invalid expression: divison by zero"); 
+    }
+    this.result /= number;
+
+  }
+
+  clear(){
+    this.result = 0;
+  }
+
+
+  getResult(){
+    return this.result;
+  }
+
+  calculate(inputExpression){
+    const temp = inputExpression;
+
+    const cleanedExpression = temp.replace(/\s+/g, '');
+
+    const isValidExpression = /^[0-9+\-*/().]+$/.test(cleanedExpression);
+
+    
+  }
+
+
+
 
 module.exports = Calculator;
