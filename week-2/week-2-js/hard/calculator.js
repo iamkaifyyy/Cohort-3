@@ -57,7 +57,21 @@ class Calculator {
 
     const isValidExpression = /^[0-9+\-*/().]+$/.test(cleanedExpression);
 
-    
+    if(!isValidExpression){
+      throw new Error("invalid expression" );
+    }
+
+    try {
+      this.result = eval(inputExpression);
+    } catch (error) {
+      throw new Error("Invalid expression.");
+    }
+  
+    if (this.result === Infinity) {
+      throw new Error("Cannot divide a number by 0.");
+    }
+  
+    return this.result;
   }
 
 
